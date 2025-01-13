@@ -1,0 +1,47 @@
+{
+  "name": "@wboot/template-web-antd",
+  "version": "1.0.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@vben/access": "latest",
+    "@vben/common-ui": "latest",
+    "@vben/constants": "latest",
+    "@vben/hooks": "latest",
+    "@vben/icons": "latest",
+    "@vben/layouts": "latest",
+    "@vben/locales": "latest",
+    "@vben/plugins": "latest",
+    "@vben/preferences": "latest",
+    "@vben/request": "latest",
+    "@vben/stores": "latest",
+    "@vben/styles": "latest",
+    "@vben/types": "latest",
+    "@vben/utils": "latest",
+    "@vueuse/core": "^12.3.0",
+    "ant-design-vue": "^4.2.6",
+    "cssnano": "^7.0.6",
+    "dayjs": "^1.11.13",
+    "pinia": "^2.3.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vben/taildwind-config": "latest",
+    "@vben/tsconfig": "latest",
+    "@vben/vite-config": "latest",
+    "vite": "^6.0.7"
+  }
+}
