@@ -1,10 +1,10 @@
 import { createApp, watchEffect } from 'vue';
 
-import { registerAccessDirective } from '@vben/access';
-import { preferences } from '@vben/preferences';
-import { initStores } from '@vben/stores';
-import '@vben/styles';
-import '@vben/styles/antd';
+import { registerAccessDirective } from '@wboot/access';
+import { preferences } from '@wboot/preferences';
+import { initStores } from '@wboot/stores';
+import '@wboot/styles';
+import '@wboot/styles/antd';
 
 import { useTitle } from '@vueuse/core';
 

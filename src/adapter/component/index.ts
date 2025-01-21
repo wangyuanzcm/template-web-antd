@@ -5,12 +5,12 @@
 
 import type { Component, SetupContext } from 'vue';
 
-import type { BaseFormComponentType } from '@vben/common-ui';
+import type { BaseFormComponentType } from '@wboot/common-ui';
 
 import { h } from 'vue';
 
-import { ApiComponent, globalShareState, IconPicker } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { ApiComponent, globalShareState, IconPicker } from '@wboot/common-ui';
+import { $t } from '@wboot/locales';
 
 import {
   AutoComplete,

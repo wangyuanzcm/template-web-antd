@@ -1,21 +1,21 @@
 <script lang="ts" setup>
-import type { NotificationItem } from '@vben/layouts';
+import type { NotificationItem } from '@wboot/layouts';
 
 import { computed, ref, watch } from 'vue';
 
-import { AuthenticationLoginExpiredModal } from '@vben/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@vben/constants';
-import { useWatermark } from '@vben/hooks';
-import { BookOpenText, CircleHelp, MdiGithub } from '@vben/icons';
+import { AuthenticationLoginExpiredModal } from '@wboot/common-ui';
+import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@wboot/constants';
+import { useWatermark } from '@wboot/hooks';
+import { BookOpenText, CircleHelp, MdiGithub } from '@wboot/icons';
 import {
   BasicLayout,
   LockScreen,
   Notification,
   UserDropdown,
-} from '@vben/layouts';
-import { preferences } from '@vben/preferences';
-import { useAccessStore, useUserStore } from '@vben/stores';
-import { openWindow } from '@vben/utils';
+} from '@wboot/layouts';
+import { preferences } from '@wboot/preferences';
+import { useAccessStore, useUserStore } from '@wboot/stores';
+import { openWindow } from '@wboot/utils';
 
 import { $t } from '#/locales';
 import { useAuthStore } from '#/store';

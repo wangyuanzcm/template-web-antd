@@ -4,7 +4,7 @@ import type {
   WorkbenchQuickNavItem,
   WorkbenchTodoItem,
   WorkbenchTrendItem,
-} from '@vben/common-ui';
+} from '@wboot/common-ui';
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
@@ -16,10 +16,10 @@ import {
   WorkbenchQuickNav,
   WorkbenchTodo,
   WorkbenchTrends,
-} from '@vben/common-ui';
-import { preferences } from '@vben/preferences';
-import { useUserStore } from '@vben/stores';
-import { openWindow } from '@vben/utils';
+} from '@wboot/common-ui';
+import { preferences } from '@wboot/preferences';
+import { useUserStore } from '@wboot/stores';
+import { openWindow } from '@wboot/utils';
 
 import AnalyticsVisitsSource from '../analytics/analytics-visits-source.vue';
 

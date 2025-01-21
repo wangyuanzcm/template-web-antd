@@ -1,1 +1,4 @@
-export { default } from '@vben/tailwind-config';
+import tailwindConfig from "@wboot/tailwind-config";
+console.log("tailwind.config.mjs", tailwindConfig);
+
+export default tailwindConfig;

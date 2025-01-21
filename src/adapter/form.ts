@@ -1,12 +1,12 @@
 import type {
   VbenFormSchema as FormSchema,
   VbenFormProps,
-} from '@vben/common-ui';
+} from '@wboot/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { setupVbenForm, useVbenForm as useForm, z } from '@wboot/common-ui';
+import { $t } from '@wboot/locales';
 
 setupVbenForm<ComponentType>({
   config: {

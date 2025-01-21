@@ -1,5 +1,5 @@
-import { initPreferences } from '@vben/preferences';
-import { unmountGlobalLoading } from '@vben/utils';
+import { initPreferences } from '@wboot/preferences';
+import { unmountGlobalLoading } from '@wboot/utils';
 
 import { overridesPreferences } from './preferences';
 

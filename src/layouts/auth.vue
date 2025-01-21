@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import { AuthPageLayout } from '@vben/layouts';
-import { preferences } from '@vben/preferences';
+import { AuthPageLayout } from '@wboot/layouts';
+import { preferences } from '@wboot/preferences';
 
 import { $t } from '#/locales';
 
