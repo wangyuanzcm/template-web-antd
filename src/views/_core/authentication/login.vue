@@ -8,7 +8,6 @@ import { AuthenticationLogin, SliderCaptcha, z } from '@wboot/common-ui';
 import { $t } from '@wboot/locales';
 
 import { useAuthStore } from '#/store';
-
 defineOptions({ name: 'Login' });
 
 const authStore = useAuthStore();

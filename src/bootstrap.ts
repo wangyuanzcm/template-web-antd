@@ -1,20 +1,19 @@
-import { createApp, watchEffect } from 'vue';
+import { createApp, watchEffect } from "vue";
 
-import { registerAccessDirective } from '@wboot/access';
-import { preferences } from '@wboot/preferences';
-import { initStores } from '@wboot/stores';
-import '@wboot/styles';
-import '@wboot/styles/antd';
+import { registerAccessDirective } from "@wboot/access";
+import { preferences } from "@wboot/preferences";
+import { initStores } from "@wboot/stores";
 
-import { useTitle } from '@vueuse/core';
+import { useTitle } from "@vueuse/core";
 
-import { $t, setupI18n } from '#/locales';
+import { $t, setupI18n } from "#/locales";
 
-import { initComponentAdapter } from './adapter/component';
-import App from './app.vue';
-import { router } from './router';
-
+import { initComponentAdapter } from "./adapter/component";
+import App from "./app.vue";
+import { router } from "./router";
+import "./assets/index.ts";
 async function bootstrap(namespace: string) {
+  console.log(namespace, "123");
   // 初始化组件适配器
   await initComponentAdapter();
 
@@ -37,12 +36,12 @@ async function bootstrap(namespace: string) {
     if (preferences.app.dynamicTitle) {
       const routeTitle = router.currentRoute.value.meta?.title;
       const pageTitle =
-        (routeTitle ? `${$t(routeTitle)} - ` : '') + preferences.app.name;
+        (routeTitle ? `${$t(routeTitle)} - ` : "") + preferences.app.name;
       useTitle(pageTitle);
     }
   });
 
-  app.mount('#app');
+  app.mount("#app");
 }
 
 export { bootstrap };

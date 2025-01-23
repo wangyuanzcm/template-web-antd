@@ -1,4 +1,9 @@
-import tailwindConfig from "@wboot/tailwind-config";
-console.log("tailwind.config.mjs", tailwindConfig);
+import defaultConfig from "@wboot/tailwind-config";
 
-export default tailwindConfig;
+export default {
+  ...defaultConfig,
+  content: [
+    ...defaultConfig.content,
+    "./src/**/*.{vue,js,ts,jsx,tsx,svelte,astro,html}"
+  ],
+};
